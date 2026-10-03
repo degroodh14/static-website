@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paws & Gear - Dog Accessories Store</title>
+
+  <!-- Bootstrap 5 CDN CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU90FeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEWIH" 
+    crossorigin="anonymous"
+  />
+
+  <style>
+    /* Fixed container height to ensure uniform grid card sizes */
+    .card-img-container {
+      overflow: hidden;
+      height: 220px;
+    }
+
+    /* Keep images well-proportioned without stretching */
+    .product-img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    /* Task Requirement: Custom hover effect on product images */
+    .product-card:hover .product-img {
+      transform: scale(1.08);
+      filter: brightness(1.05);
+    }
+  </style>
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+  <!-- Header Section -->
+  <header class="bg-primary text-white text-center py-4 mb-4 shadow-sm">
+    <div class="container">
+      <h1 class="fw-bold">Paws & Gear Dog Accessories</h1>
+      <p class="lead mb-0">Browse our featured dog accessories below</p>
+    </div>
+  </header>
+
+  <!-- Main Content Grid -->
+  <main class="container my-4 flex-grow-1">
+    <div class="row g-4">
+
+      <!-- Product 1: Leather Dog Collar -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm product-card mb-4">
+          <div class="card-img-container">
+            <img src="https://leatheriuswoodman.com/cdn/shop/files/MAIN_1.jpg?v=1777464979&width=1600" class="img-fluid product-img w-100" alt="Leather Dog Collar">
+          </div>
+          <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title">Leather Dog Collar</h5>
+            <p class="card-text text-muted fs-5 fw-semibold">$24.99</p>
+            <button class="btn btn-primary mt-auto">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2: Dog Harness -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm product-card mb-4">
+          <div class="card-img-container">
+            <img src="https://www.noxgear.com/wp-content/uploads/fly-images/443/attr-lighthound-adjustable@2x-2320x0.jpg" class="img-fluid product-img w-100" alt="Reflective Dog Harness">
+          </div>
+          <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title">Reflective Dog Harness</h5>
+            <p class="card-text text-muted fs-5 fw-semibold">$34.99</p>
+            <button class="btn btn-primary mt-auto">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3: Rope Leash -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm product-card mb-4">
+          <div class="card-img-container">
+            <img src="https://m.media-amazon.com/images/I/81AkX2gvkGL._AC_UF894,1000_QL80_.jpg" class="img-fluid product-img w-100" alt="Durable Rope Leash">
+          </div>
+          <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title">Durable Rope Leash</h5>
+            <p class="card-text text-muted fs-5 fw-semibold">$18.99</p>
+            <button class="btn btn-primary mt-auto">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4: Dog Bed -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm product-card mb-4">
+          <div class="card-img-container">
+            <img src="https://m.media-amazon.com/images/I/71Glb77vr1L.jpg" class="img-fluid product-img w-100" alt="Orthopedic Dog Bed">
+          </div>
+          <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title">Orthopedic Dog Bed</h5>
+            <p class="card-text text-muted fs-5 fw-semibold">$69.99</p>
+            <button class="btn btn-primary mt-auto">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5: Stainless Steel Bowl -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm product-card mb-4">
+          <div class="card-img-container">
+            <img src="https://ruffwear.com/cdn/shop/files/20651_Basecamp-Bowl_River-Rock-Green_sizes.png?crop=center&height=550&v=1781648431&width=820" class="img-fluid product-img w-100" alt="Stainless Steel Dog Bowl">
+          </div>
+          <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title">Stainless Steel Bowl</h5>
+            <p class="card-text text-muted fs-5 fw-semibold">$15.99</p>
+            <button class="btn btn-primary mt-auto">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6: Chew Toy -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm product-card mb-4">
+          <div class="card-img-container">
+            <img src="https://media.tractorsupply.com/is/image/TractorSupplyCompany/6052185?wid=554&hei=554&qlt=90&fmt=jpeg&resMode=sharp2&op_usm=0.9,1.0,8,0" class="img-fluid product-img w-100" alt="Interactive Chew Toy">
+          </div>
+          <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title">Interactive Chew Toy</h5>
+            <p class="card-text text-muted fs-5 fw-semibold">$12.99</p>
+            <button class="btn btn-primary mt-auto">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7: Dog Sweater -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm product-card mb-4">
+          <div class="card-img-container">
+            <img src="https://miamorepets.com/cdn/shop/files/mia-pegy.webp?v=1770306494&width=800" class="img-fluid product-img w-100" alt="Winter Dog Sweater">
+          </div>
+          <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title">Winter Dog Sweater</h5>
+            <p class="card-text text-muted fs-5 fw-semibold">$29.99</p>
+            <button class="btn btn-primary mt-auto">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 8: Grooming Brush -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm product-card mb-4">
+          <div class="card-img-container">
+            <img src="https://littlehartequine.com/cdn/shop/products/71GvubKEQlL._SL1500_46cca984-ecd4-44de-88cb-3ccaedb93b8a_1024x1024@2x.jpg?v=1699137537" class="img-fluid product-img w-100" alt="Grooming Brush">
+          </div>
+          <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title">Grooming Brush</h5>
+            <p class="card-text text-muted fs-5 fw-semibold">$14.99</p>
+            <button class="btn btn-primary mt-auto">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 9: Travel Water Bottle -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm product-card mb-4">
+          <div class="card-img-container">
+            <img src="https://cookiesandco.shop/cdn/shop/files/Copy_of_Cookies_29_2048x.jpg?v=1723835401" class="img-fluid product-img w-100" alt="Travel Water Bottle">
+          </div>
+          <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title">Travel Water Bottle</h5>
+            <p class="card-text text-muted fs-5 fw-semibold">$19.99</p>
+            <button class="btn btn-primary mt-auto">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 10: Dog Bandana -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm product-card mb-4">
+          <div class="card-img-container">
+            <img src="https://www.thefoggydog.com/cdn/shop/files/crop_GardenParty_Bandana_24-02-06_21176_a8f5d091-91a6-4738-8eea-c0e2021d4e53.jpg?v=1767654318&width=1946" class="img-fluid product-img w-100" alt="Dog Bandana">
+          </div>
+          <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title">Stylish Dog Bandana</h5>
+            <p class="card-text text-muted fs-5 fw-semibold">$9.99</p>
+            <button class="btn btn-primary mt-auto">Buy</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        
+        <!-- Larger Company Logo (80px x 80px) -->
+        <div class="col-auto">
+          <img src="https://i.etsystatic.com/27182590/r/il/0bb725/3669837585/il_570xN.3669837585_79t4.jpg" alt="Company Logo" class="img-fluid rounded-circle" style="width: 80px; height: 80px; object-fit: cover;" />
+        </div>
+
+        <!-- Smaller Contact Form -->
+        <div class="col-auto">
+          <form class="row row-cols-auto g-2 align-items-center">
+            <div class="col">
+              <label class="visually-hidden" for="customerName">Name</label>
+              <input type="text" class="form-control form-control-sm" id="customerName" placeholder="Your Name" style="width: 140px;" />
+            </div>
+
+            <div class="col">
+              <label class="visually-hidden" for="customerEmail">Email</label>
+              <input type="email" class="form-control form-control-sm" id="customerEmail" placeholder="Your Email" style="width: 160px;" />
+            </div>
+
+            <div class="col">
+              <button type="submit" class="btn btn-success btn-sm">Contact Us</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JavaScript Bundle -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY31HB60NNkmXc5s9fDVZLESaAA55NDz0xhy9GkcIds1K1eN7N6jIeHz" 
+    crossorigin="anonymous">
+  </script>
+</body>
+</html>
